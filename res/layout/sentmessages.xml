@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent" >
+	
+
+	
+	<TableRow >
+		<TextView 
+			android:text="SMS: "/>
+		<TextView 
+			android:id="@+id/messageSENT"
+			android:text="message sent"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:textStyle="bold"
+			android:textSize="17sp"/>
+	</TableRow>
+	<TableRow >
+		<TextView 
+			android:text="to: "/>
+		<TextView 
+			android:id="@+id/to"
+			android:text="sender's number"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"/>
+	</TableRow>
+	<TableRow >
+		<TextView 
+			android:text="at "/>
+		<TextView 
+			android:id="@+id/sendingDate"
+			android:text="date sent"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:textSize="12sp"
+			android:textStyle="italic"/>
+	</TableRow>
+
+</TableLayout>

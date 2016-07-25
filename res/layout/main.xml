@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="#fff"
+	android:scrollbars="vertical" >
+
+	<ImageButton
+		android:id="@+id/btnComposeSMS"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentTop="true"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="114dp"
+		android:src="@drawable/compose"
+		android:text="@string/SendSMS"
+		android:textColor="#000000" />
+
+	<ImageButton
+		android:id="@+id/btninbox"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/btnComposeSMS"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="14dp"
+		android:src="@drawable/inbox2"
+		android:text="inbox"
+		android:textColor="#000000" />
+
+</RelativeLayout>

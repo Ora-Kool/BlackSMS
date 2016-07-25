@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:orientation="vertical" >
+
+  <LinearLayout
+  	android:layout_width="fill_parent"
+  	android:layout_height="wrap_content"
+  	android:layout_weight="0.06"
+  	android:orientation="horizontal"
+  	android:paddingBottom="5dp" >
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:minWidth="70dp"
+      android:text="Chat With"
+      android:textStyle="bold" 
+      android:paddingBottom="0dp"/>
+
+    <AutoCompleteTextView
+    	android:id="@+id/number"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_marginLeft="10dip"
+    	android:layout_marginRight="10dip"
+    	android:ems="10"
+    	android:inputType="phone"
+    	android:paddingBottom="5dp"
+    	android:textColor="#000000"
+    	android:textColorHighlight="#000000"
+    	android:textColorLink="#000000"
+    	android:textStyle="bold"
+    	android:width="250dip" 
+    	android:focusable="true"
+    	android:focusableInTouchMode="true">
+
+    	<requestFocus />
+    </AutoCompleteTextView>
+
+  </LinearLayout>
+
+  <ListView
+  	android:id="@+id/listMessages"
+  	android:layout_width="wrap_content"
+  	android:layout_height="0dp"
+  	android:layout_weight="1"
+  	android:scrollbars="horizontal"
+  	android:divider="#aff"
+  	android:dividerHeight="7dp"
+  	android:background="#aff"
+  	android:paddingTop="0dp"
+  	android:stackFromBottom="true"
+  	android:transcriptMode="alwaysScroll">
+  </ListView>
+
+  <LinearLayout
+  	android:id="@+id/linearLayout2"
+  	android:layout_width="match_parent"
+  	android:layout_height="65dp"
+  	android:gravity="top"
+  	android:orientation="horizontal"
+  	android:paddingTop="5dp">
+
+    <EditText
+      android:id="@+id/body"
+      android:layout_width="0dip"
+      android:layout_height="wrap_content"
+      android:layout_weight="1.5"
+      android:gravity="clip_horizontal"
+      android:hint="Type to compose" >
+    </EditText>
+
+    <ImageButton
+    	android:id="@+id/sendButton"
+    	android:layout_width="40dp"
+    	android:layout_height="40dp"
+    	android:layout_marginLeft="5dp"
+    	android:layout_marginRight="5dp"
+    	android:layout_marginTop="5dp"
+    	android:src="@android:drawable/ic_menu_send" />
+
+  </LinearLayout>
+</LinearLayout>
